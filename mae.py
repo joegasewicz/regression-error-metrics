@@ -23,5 +23,3 @@ class MAE(BaseREM):
         for e in self.errors:
             abs_errors.append(abs(e))
         self.errors = abs_errors
-
-

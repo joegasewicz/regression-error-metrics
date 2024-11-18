@@ -17,5 +17,3 @@ class MSE(BaseREM):
             actual_vals=actual_vals,
             predicted_vals=predicted_vals,
         )
-
-

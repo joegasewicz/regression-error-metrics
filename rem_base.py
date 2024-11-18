@@ -36,8 +36,6 @@ class BaseREM(ABC):
         for e in self.errors:
             self.result += e
 
-
-
     def get_mean(self) -> float:
         """
         :return: Mean absolute error as a float
