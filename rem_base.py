@@ -26,9 +26,17 @@ class BaseREM(ABC):
         for i in range(range_len):
             self.errors.append(self.actual_vals[i]-self.predicted_vals[i])
 
+    def square_errors(self):
+        squ_errs = []
+        for e in self.errors:
+            squ_errs.append(pow(e, 2))
+        self.errors = squ_errs
+
     def sum_errors(self) -> None:
         for e in self.errors:
             self.result += e
+
+
 
     def get_mean(self) -> float:
         """

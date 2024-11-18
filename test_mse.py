@@ -32,7 +32,7 @@ class TestMSE:
         )
         mse2.calc_errors()
         mse2.square_errors()
-        assert len(mse.errors) == len(mse.actual_vals)
+        assert len(mse2.errors) == len(mse2.actual_vals)
         assert mse2.errors == [9, 9, 4, 9, 4, 4, 1, 1, 4, 9, 16, 1]
 
     def test_sum_errors(self):

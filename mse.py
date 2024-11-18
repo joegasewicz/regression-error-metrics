@@ -18,8 +18,4 @@ class MSE(BaseREM):
             predicted_vals=predicted_vals,
         )
 
-    def square_errors(self):
-        squ_errs = []
-        for e in self.errors:
-            squ_errs.append(pow(e, 2))
-        self.errors = squ_errs
+

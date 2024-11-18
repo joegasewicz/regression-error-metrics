@@ -47,3 +47,16 @@ $$
 \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
 $$
 
+```python
+from rmse import RMSE
+rmse = RMSE(
+    actual_vals=[34, 37, 44, 47, 48, 48, 46, 43, 32, 27, 26, 24],
+    predicted_vals=[37, 40, 46, 44, 46, 50, 45, 44, 34, 30, 22, 23],
+)
+rmse.calc_errors()
+rmse.square_errors()
+rmse.sum_errors()
+rmse.set_mean()
+result = rmse.get_square_root()
+assert round(result, 5) == 2.43242
+```
