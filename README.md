@@ -17,8 +17,8 @@ mae = MAE(
 mae.calc_errors()
 mae.set_absolute_vals()
 mae.sum_errors()
-result2 = mae.get_mean()
-assert round(result2, 5) == 2.42857
+result = mae.get_mean()
+assert round(result, 5) == 2.42857
 ```
 
 ### Mean Squared Error (MSE)
@@ -37,12 +37,13 @@ mse = MSE(
 mse.calc_errors()
 mse.square_errors()
 mse.sum_errors()
-result2 = mse.get_mean()
-assert round(result2, 5) == 5.91667
+result = mse.get_mean()
+assert round(result, 5) == 5.91667
 ```
 
-### ### Mean Squared Error (MSE)
+### Root Mean Square Error (RMSE)
 
 $$
 \text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
 $$
+
