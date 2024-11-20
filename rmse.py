@@ -8,7 +8,6 @@ class RMSE(BaseREM):
     """
     More popular than MSE because RMSE is interpretable in the y units.
     """
-
     square_root: float
 
     def __init__(self, *,
