@@ -4,6 +4,10 @@ from rem_base import BaseREM
 
 
 class MSE(BaseREM):
+    """
+    The most popular choice of evaluation error because it punishes
+    larger errors.
+    """
 
     def __init__(self, *,
                  actual_vals: List[int],

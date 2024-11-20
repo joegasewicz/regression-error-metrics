@@ -6,7 +6,9 @@ from rem_base import BaseREM
 class MAE(BaseREM):
     """
     The Mean Absolute Error measures the average absolute error,
-    treating all errors equally.
+    treating all errors equally. This evaluation metric is the easiest
+    to understand.
+    Takes the error to the absolute value of it & average it out.
     """
 
     def __init__(self, *,

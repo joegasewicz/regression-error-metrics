@@ -5,6 +5,9 @@ from rem_base import BaseREM
 
 
 class RMSE(BaseREM):
+    """
+    More popular than MSE because RMSE is interpretable in the y units.
+    """
 
     square_root: float
 
